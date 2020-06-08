@@ -1,0 +1,7 @@
+<h2>Edit Book</h2>
+<!-- <form action="/books" method="post" enctype="multipart/form-data"> -->
+<form action="/books/<%= book.id %>?_method=PUT" method="post">
+  <%- include('_form_field.ejs') %>
+  <button class="btn" type="submit">Update</button>
+  <a href="/books">Cancel</a>
+</form>
