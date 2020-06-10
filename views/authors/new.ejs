@@ -1,6 +1,8 @@
 <h2 class="page-header">New Author</h2>
 <form action="/authors" method="post">
   <%- include('_form_field.ejs') %>
-  <button class="btn" type="submit">Create</button>
-  <a href="/authors">Cancel</a>
+  <div class="form-row form-row-end btn-row">
+    <button class="btn btn-primary" type="submit">Create</button>
+    <a href="/authors" class="btn btn-danger">Cancel</a>
+  </div>
 </form>
